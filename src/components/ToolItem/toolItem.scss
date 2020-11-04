@@ -1,0 +1,91 @@
+@import './../../styles/variables';
+@import './../../styles/mixins';
+
+.Item {
+    position: relative;
+    width: 16rem;
+    height: 19rem;
+    background-color: $color-light-pink-1;
+    @include flex-center-column;
+    justify-self: center; 
+
+    @media (min-width: $bp-largest) {
+        width: 33rem;
+        height: 36rem;
+    }
+
+    /* &:hover {
+        cursor: pointer;
+    } */
+}
+
+.Img {
+    height: 50%;
+    margin-bottom: 1rem;
+    filter: opacity(85%);
+
+    @media (min-width: $bp-largest) {
+        height: 65%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.ToolInfoBox {
+    width: 100%;
+    height: 4rem;
+    padding: .5rem 0;
+    background-color: $color-pink-2;
+    @include flex-center-row;
+
+    @media (min-width: $bp-largest) {
+        height: 8rem;
+    }
+
+    @media (max-width: 280px) {
+        width: 80%;
+    }
+}
+
+.Back {
+    display: none;
+    position: absolute;
+    width: 16rem;
+    height: 19rem;
+    background-image: linear-gradient(
+                          rgba($color-white, 0.90), 
+                          rgba($color-light-pink-1, 0.95)),
+                          url(../../assets/images/4.jpg);
+    @include bg-properties;
+
+    @media (min-width: $bp-largest) {
+        width: 33rem;
+        height: 36rem;
+    }
+}
+
+.CloseBox {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.Close {
+    font-size: 2rem;
+    color: #e388a7;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-dark-pink-2;
+    }
+}
+
+.TextBox {
+    height: 100%;
+    padding-bottom: 1.5rem;
+    @include flex-center-row;
+}
+
+.IsFlipped {
+    display: flex;
+}

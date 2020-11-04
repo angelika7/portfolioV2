@@ -1,0 +1,27 @@
+@import './../../../styles/variables';
+@import './../../../styles/mixins';
+
+.Toolbar {
+    @include top-bar;
+    @include flex-center-row;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999; 
+
+    @media (min-width: $bp-largest) {
+        height: 20rem;
+    }
+
+    @media (max-width: $bp-small) {
+        @include flex-center-column;
+        min-height: 100vh;
+        width: 100%;
+        display: none;
+    }
+}
+
+.IsOpened {
+    display: flex;
+}

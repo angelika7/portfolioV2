@@ -1,0 +1,44 @@
+// COLORS 
+$color-white: #ffffff;
+
+//MINT
+
+$color-light-mint-1: #F6FEFA;
+$color-light-mint-2: #D8F4E6;
+$color-light-mint-3: #AEE2C8;
+
+$color-mint-1: #A7E6D6;
+$color-mint-2: #7DC5A1;
+
+$color-dark-mint-1: #78CCB7;
+$color-dark-mint-2: #4CA992;
+
+//PINK
+
+$color-light-pink-1: #FEF7FA;
+$color-light-pink-2: #FADEE8;
+$color-light-pink-3: #F3BCCF;
+
+$color-pink-1: #FBB6C2;
+$color-pink-2: #E793B1;
+
+$color-dark-pink-1: #F691A3;
+$color-dark-pink-2: #F06C84;
+
+
+
+// FONT
+$default-font-size: 1.6rem;
+
+// Breakpoints
+
+$bp-largest: 125em;     // min. 2000px
+$bp-large: 64em;    // 1024px
+$bp-medium: 60.625em;   // 970px
+$bp-medium-extra: 56.25em;   // 900px
+$bp-small: 53.125em;     // 850px
+$bp-small-extra: 43.125em; // 690px
+$bp-smallest: 37.5em; // 600px
+$bp-mobile-l: 34.375em; // 550px
+$bp-mobile-m: 28.75em; // 460px
+$bp-mobile-s: 23.4375em; // < 375px

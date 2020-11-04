@@ -1,0 +1,248 @@
+@import './../../styles/variables';
+@import './../../styles/mixins';
+
+.Header { 
+    margin-top: 9rem;
+    height: 45rem;
+    background-image: linear-gradient(
+                          rgba($color-light-pink-1, 0.2), 
+                          rgba($color-light-pink-2, 0.2)),
+                          url(../../assets/images/9-min.jpg);
+    @include bg-properties;
+    position: relative;
+
+    @media (min-width: $bp-largest) {
+        height: 75rem;
+        margin-top: 20rem;
+    }
+
+    @media (max-width: $bp-small) {
+        margin-top: 0;
+        height: 52rem;
+    }
+}
+
+.TopBar {
+    display: none;
+
+    @media (min-width: $bp-largest) {
+        height: 20rem;
+    }
+
+    @media (max-width: $bp-small) {
+        @include top-bar;
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 7rem;
+    } 
+
+    @media (max-width: 280px) {
+        height: 5rem;
+    }
+}
+
+.ImgBox {
+    position: absolute;
+    height: 34.5rem;
+    width: 25rem;
+    top: 40%;
+    left: 8rem;
+    background-color: $color-dark-mint-1;
+    z-index: 10;
+
+    @media (min-width: $bp-largest) {
+        height: 74.5rem;
+        width: 45rem;
+        left: 10%;
+    }
+
+    @media (max-width: 1160px) {
+        left: 10rem;
+        width: 23rem;
+    }
+
+    @media (max-width: $bp-large) {
+        top: 58%;
+        z-index: 25;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        top: 50%;
+    }
+
+    @media (max-width: $bp-smallest) {
+        left: 4rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        height: 28.5rem;
+        width: 19rem;
+        left: 3rem;
+    }
+
+    @media (max-width: 415px) {
+        top: 56%;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        height: 24.5rem;
+        width: 15rem;
+    }
+}
+
+.Img {
+    position: absolute;
+    top: 2rem;
+    left: -4rem;
+    width: 38rem;
+    object-fit: cover;
+    transform: rotate(90deg);
+    z-index: 11;
+
+    @media (min-width: $bp-largest) {
+        width: 78rem;
+        left: -4rem;
+    }
+
+    @media (max-width: 1160px) {
+        left: -11rem;
+    }
+
+    @media (max-width: 1140px) {
+        top: 13rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        width: 32rem;
+        top: 10rem;
+        left: -10rem;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        width: 25rem;
+        left: -8.5rem;
+    }
+}
+
+.SloganBox {
+    position: absolute;
+    height: auto;
+    width: 80rem;
+    top: 20%;
+    right: 0;
+    background-color: rgba($color-light-pink-1, .9);
+    padding: 3rem;
+    z-index: 22;
+    @include flex-center-row;
+
+    @media (min-width: $bp-largest) {
+        width: 140rem;
+    }
+
+    @media (max-width: 1140px) {
+        width: 70rem;
+    }
+
+    @media (max-width: $bp-medium) {
+        top: 14%;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        width: 60rem;
+    }
+
+    @media (max-width: $bp-small) {
+        top: 20%;
+    }
+
+    @media (max-width: $bp-smallest) {
+        width: 100%;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        top: 22%;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        padding: 1.5rem;
+        top: 26%;
+    }
+}
+
+.Slogan {
+    @include fill-img-width;
+}
+
+.NameBox {
+    position: absolute;
+    width: 55rem;
+    top: 75%;
+    right: 0;
+    padding: 3rem;
+
+    @media (min-width: $bp-largest) {
+        width: 85rem;
+    }
+
+    @media (max-width: $bp-large) {
+        top: 71%;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        width: 40rem;
+        right: 2rem;
+        top: 68%;
+    }
+
+    @media (max-width: $bp-smallest) {
+        width: 30rem;
+    }
+
+    @media (max-width: 415px) {
+        top: 71%;
+        padding-right: 1rem;
+        width: 25rem;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        width: 15rem;
+        padding: .5rem;
+        top: 83%;
+    }
+
+    @media (max-width: 280px) {
+        top: 16%;
+        width: 20rem;
+        right: 0rem;
+    }
+}
+
+.Name {
+    font-family: 'Notera';
+    src: url(../../assets/fonts/Notera.ttf) format('ttf');
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.5rem;
+
+    @media (min-width: $bp-largest) {
+        font-size: 9rem;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        font-size: 4rem;
+        text-align: end;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        font-size: 2rem;
+    }
+} 
+
+
+

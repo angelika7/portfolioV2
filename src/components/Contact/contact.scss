@@ -1,0 +1,95 @@
+@import './../../styles/variables';
+@import './../../styles/mixins';
+
+.Contact {
+    width: 100%;
+    margin-top: 8rem;
+    height: 30rem;
+    background-color: rgba($color-light-mint-3, .4);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+
+    @media (min-width: $bp-largest) {
+        margin-top: 10rem;
+        height: 40rem;
+    }
+}
+
+.Slogan {
+    width: 23rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+
+    @media (min-width: $bp-largest) {
+        width: 45rem;
+    }
+
+    @media (max-width: $bp-small) {
+        width: 18rem;
+        margin-top: 2.5rem;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        width: 13rem;
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+    }
+}
+
+.Decoration {
+    background-image: url(../../assets/images/5.jpg);
+    @include bg-properties;
+}
+
+.InfoBox {
+    width: 50%;
+    height: 70%;
+    background-color: rgba($color-light-mint-1, .9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: $bp-medium) {
+        left: 65%;
+    }
+
+    @media (max-width: $bp-small) {
+        width: 80%;
+        height: 40%;
+        left: 50%;
+        top: 63%;
+    }
+}
+
+.Icon {
+    font-size: 6rem;
+    color: $color-dark-mint-2;
+    transition: all .3s;
+
+    &:hover {
+        cursor: pointer;
+        color: #0A6851;
+    }
+
+    @media (min-width: $bp-largest) {
+        font-size: 9rem;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        font-size: 5rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        font-size: 3rem;
+    }
+}

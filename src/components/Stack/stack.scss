@@ -1,0 +1,133 @@
+@import './../../styles/variables';
+@import './../../styles/mixins';
+
+.Stack {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    position: relative;
+    border: 3rem solid #e388a7;
+    border-right: none;
+
+    @media (min-width: $bp-largest) {
+        border: 5rem solid #e388a7;
+    }
+
+    @media (max-width: $bp-medium) {
+        grid-template-columns: 80% 20%;
+    }
+
+    @media (max-width: $bp-small) {
+        @include flex-center-column;
+        border-right: 3rem solid #e388a7;
+    }
+
+    @media (max-width: $bp-mobile-m) {
+        width: 86%;
+        border: 2rem solid #e388a7;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        width: 100%;
+        border: 1rem solid #e388a7;
+    }
+}
+
+.InfoBox {
+    background-color: #e388a7;
+    width: 100%;
+    overflow: hidden;
+    @include flex-center-column;
+
+    @media (max-width: $bp-small) {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 20rem;
+        padding-top: 3rem;
+    }
+}
+
+.Tulips {
+    height: 45rem;
+    object-fit: cover;
+
+    @media (min-width: $bp-largest) {
+        height: 65rem;
+        margin-bottom: 5rem;
+    }
+
+    @media (max-width: $bp-small) {
+        height: 35rem;
+        @include flex-center-row;
+        justify-self: center;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        height: 30rem;
+    }
+}
+
+.Box {
+    width: 120%;
+    height: 14rem;
+    margin-top: -6rem;
+    @include flex-center-column;
+    padding: 2rem 0;
+
+    @media (max-width: $bp-small) {
+        margin-top: 0;
+        width: 100%;
+    }
+}
+
+.Info {
+    width: 75%;
+}
+
+.Tools {
+    background-color: rgba($color-light-pink-1, .9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ToolsHeading {
+    margin-top: 2rem;
+    width: 25rem;
+
+    @media (min-width: $bp-largest) {
+        width: 43rem;
+        margin: 8rem 0;
+    }
+
+    @media (max-width: $bp-small) {
+        width: 18rem;
+        margin-top: 4rem;
+    }
+
+    @media (max-width: $bp-mobile-s) {
+        width: 13rem;
+    }
+}
+
+.TextBox {
+    width: 100%;
+}
+
+.ToolsBox {
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4rem 0;
+
+    @media (max-width: $bp-small) {
+        margin-top: 2rem;
+    }
+
+    @media (max-width: $bp-mobile-m) {
+        width: 100%;
+    }
+}

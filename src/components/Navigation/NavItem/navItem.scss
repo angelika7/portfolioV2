@@ -1,0 +1,57 @@
+@import './../../../styles//variables';
+@import './../../../styles/mixins';
+
+.NavItem {
+    width: 22rem;
+    padding: 1.5rem;
+    @include flex-center-row;
+
+    @media (min-width: $bp-largest) {
+        width: 30rem;
+    }
+}
+
+.NavItem a {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    transition: all .3s;
+    text-decoration: none;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: $color-light-pink-1; 
+
+    @media (min-width: $bp-largest) {
+        font-size: 3.1rem;
+        line-height: 5rem;
+        letter-spacing: .4rem;
+    }
+
+    @media (max-width: 1160px) {
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: $bp-small) {
+        font-size: 1.5rem;
+    }
+}
+
+.NavItem a:hover{
+    color: $color-mint-1;   
+    background-color: $color-light-mint-1;
+    
+}
+
+.Active {
+    color: $color-mint-1;   
+    background-color: $color-light-mint-1;
+}
