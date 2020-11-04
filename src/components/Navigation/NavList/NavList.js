@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-
 import NavItem from './../NavItem/NavItem';
 import classes from './navList.scss'
-
 
 class NavList extends Component {
   state = {
@@ -16,22 +14,12 @@ class NavList extends Component {
     ]
   }
   
-
   componentDidMount() {
    window.addEventListener('scroll', this.changeActiveClass)
-   document.querySelector(`ul li a[href="/#home"]`).classList.add(`${classes.Active}`);
+   document.querySelector(`ul li a:first-of-type`).classList.add(`${classes.Active}`);
   }
-
-  
-    
+ 
   changeActiveClass = () => { 
-    /* let sections = [
-      document.getElementById('home'),
-      document.getElementById('about'),
-      document.getElementById('projects'),
-      document.getElementById('stack'),
-      document.getElementById('contact'),
-    ]; */
 
     let links = document.querySelectorAll("nav ul li a");
     let scrollTop = window.scrollY;
@@ -54,41 +42,9 @@ class NavList extends Component {
       else{
         element.classList.remove(`${classes.Active}`);
       }
-    
-    
-
-      /* if(scrollTop > offsetTop) {
-              document.querySelector(`ul li a[href="/#${id}"]`).classList.add(`${classes.Active}`);
-              window.location.hash = id
-              
-      } else {
-              document.querySelector(`ul li a[href="/#${id}"]`).classList.remove(`${classes.Active}`);
-          } */
-      
     })
-    
-    /* const observer = new IntersectionObserver(entries => {
-      console.log(document.getElementById(`stack`).offsetTop)
-      entries.forEach(entry => {
-          const id = entry.target.getAttribute('id');
-          
-          if (entry.intersectionRatio > 0) {
-              document.querySelector(`ul li a[href="/#${id}"]`).classList.add(`${classes.Active}`);
-              window.location.hash = id
-              
-          } else {
-              document.querySelector(`ul li a[href="/#${id}"]`).classList.remove(`${classes.Active}`);
-          }
-      }); */
+
   } 
-
-  // Track all sections that have an `id` applied
-  /* document.querySelectorAll('section[id]').forEach((section) => {
-      observer.observe(section); 
-  } */
-
-  
-  
 
   render() {
     
@@ -104,9 +60,7 @@ class NavList extends Component {
       <NavItem id='#contact' link="#contact" >Kontakt</NavItem> */}
     </ul>
   )
-  }
-
-    
+  } 
 };
 
 export default NavList;
