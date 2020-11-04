@@ -13,11 +13,10 @@ import gsap from 'gsap';
 
 function About(){
     const sectionRef = useRef(null);
-
     const intersection = useIntersection(sectionRef, {
         root: null,
         rootMargin: '0px',
-        threshold: .5
+        threshold: .3
     });
 
     //FadeIn
@@ -35,12 +34,12 @@ function About(){
     };
 
     //Checking to see when the vieport is visible to the user
-    intersection && intersection.intersectionRatio < 0.5
+    intersection && intersection.intersectionRatio < 0.3
     ? fadeOut(".fadeIn")
     : fadeIn(".fadeIn") 
     
     return (
-        <section className={classes.About} ref={sectionRef} id='about'>
+        <section className={classes.About} id='about' ref={sectionRef}>
             <div className={classes.SloganBox}>
                 <img className={classes.Slogan} src={aboutText} alt='Text'/>
             </div>
