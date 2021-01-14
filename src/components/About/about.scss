@@ -1,0 +1,423 @@
+@import './../../styles/variables';
+@import './../../styles/mixins';
+
+.About {
+    width: 80%;
+    background-color: $color-light-pink-1;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 3rem;
+
+    @media (max-width: $bp-large) {
+        @include flex-center-column; 
+    }
+
+    @media (max-width: $bp-mobile-m) {
+        overflow: hidden;
+        padding-bottom: 6rem;
+        width: 100%;
+    }
+}
+
+.SloganBox {
+    width: 30rem;
+    height: auto;   
+    position: absolute;
+    left: 20%;
+    top: 6rem;
+
+    @media (min-width: $bp-largest) {
+        width: 55rem;
+        left: 30%;
+    }
+
+    @media (max-width: $bp-large) {
+        left: 60%;
+    }
+
+    @media (max-width: 670px) {
+        width: 28rem;
+        left: 50%;
+    }
+
+    @media (max-width: $bp-smallest) {
+        width: 23rem;
+        left: 55%;
+    }
+
+    @media (max-width: $bp-mobile-m) {
+        width: 17rem;
+        left: 38%;
+    }
+
+    @media (max-width: 415px) {
+        left: 53%;
+    }
+
+    @media (max-width: 280px) {
+        left: 48%;
+    }
+}
+
+.Slogan {
+    @include fill-img-width;
+}
+
+.RightSide {
+    width: 100%;
+    height: 100%;
+
+    @include flex-center-row; 
+
+    @media (max-width: $bp-large) {
+        margin-top: 12rem;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        margin-top: 14rem;
+    }
+
+    @media (max-width: $bp-smallest) {
+        margin-top: 14rem;
+    }
+
+    @media (max-width: $bp-mobile-m) {
+        margin-top: 5rem;
+    }
+}
+
+.FotoBox {
+    height: 35rem;
+    width: 40rem;
+    margin-left: 5rem;
+    position: relative;
+
+    @media (min-width: $bp-largest) {
+        width: 60rem;
+        height: 55rem;
+    }
+
+    @media (max-width: 1140px) {
+        height: 32rem;
+        width: 37rem;
+    }
+
+    @media (max-width: $bp-large) {
+        margin-left: 0;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        width: 25rem;
+        height: 30rem;
+    }
+
+    @media (max-width: $bp-mobile-m) {
+        width: 100%;
+        @include flex-center-row; 
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+
+    &_foto {
+        height: 28rem;
+        width: 23rem;
+        padding: 2rem;
+        position: absolute;
+
+        @media (min-width: $bp-largest) {
+            width: 43rem;
+            height: 48rem;
+        }
+
+        @media (max-width: 1140px) {
+            height: 26rem;
+            width: 21rem;
+        }
+
+        @media (max-width: $bp-mobile-l) {
+            height: 20rem;
+            width: 15rem;
+        }
+
+        @media (max-width: $bp-mobile-s) {
+            position: relative;
+            padding: 0;
+        }
+
+        &___one {
+            @include fill-img-height;
+            position: absolute;
+            top: 5rem;
+            left: -10rem;
+            opacity: 0;
+            transform: translateY(20rem);
+            transition: all .3s;
+            transition-delay: .0s;
+
+            @media (min-width: $bp-largest) {
+                left: -20rem;
+            }
+
+            @media (max-width: 1140px) {
+                left: -7rem;
+            }
+
+            @media (max-width: $bp-mobile-l) {
+                left: -6rem;
+            }
+
+            @media (max-width: $bp-mobile-s) {
+                @include foto-rel-auto;
+            }
+        }
+
+        &___two {
+            @include fill-img-height;
+            position: absolute;
+            top: 3rem;
+            right: -24rem;
+            opacity: 0;
+            transform: translateY(20rem);
+            transition: all .3s;
+            transition-delay: .05s;
+
+            @media (min-width: $bp-largest) {
+                top: 5rem;
+                right: -40rem;
+            }
+
+            @media (max-width: $bp-mobile-l) {
+                right: -16rem;
+            }
+
+            @media (max-width: $bp-mobile-s) {
+                @include foto-rel-auto;
+            }
+        }
+
+        &___three {
+            @include fill-img-height;
+            position: absolute;
+            top: 20rem;
+            right: -5rem;
+            z-index: 50;
+            opacity: 0;
+            transform: translateY(20rem);
+            transition: all .3s;
+            transition-delay: .1s;
+
+            @media (min-width: $bp-largest) {
+                top: 40rem;
+            }
+
+            @media (max-width: 1140px) {
+                right: -8rem;
+            }
+
+            @media (max-width: $bp-mobile-l) {
+                left: 5rem;
+                top: 16rem;
+            }
+
+            @media (max-width: $bp-mobile-s) {
+                @include foto-rel-auto;
+            }
+        }
+
+        &___four {
+            @include fill-img-height;
+            position: absolute;
+            top: -4rem;
+            right: -4rem;
+            opacity: 0;
+            transform: translateY(20rem);
+            transition: all .3s;
+            transition-delay: .15s;
+
+            @media (max-width: 1140px) {
+                right: -7rem;
+            }
+
+            @media (max-width: $bp-mobile-l) {
+                right: -4rem;
+            }
+
+            @media (max-width: $bp-mobile-s) {
+                right: 0rem;
+                top: 0rem;
+                z-index: 50;
+                width: 15rem;
+                height: auto; 
+            }
+        }
+    } 
+}
+
+.AnimationImg {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.LeftSide {
+    margin-top: 20rem;
+
+    visibility: hidden;
+
+    @media (min-width: $bp-largest) {
+        margin-top: 45rem;
+    }
+
+    @media (max-width: $bp-large) {
+        width: 100%;
+        @include flex-center-row;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        margin-top: 21rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        margin-top: 15rem;
+        width: 100%;
+    }
+
+    @media (max-width: $bp-mobile-m) {
+        width: 100%;
+    }
+}
+
+.DescriptionBox {
+    width: 45rem;
+    height: 48rem;
+    margin-left: -4rem;
+    background-color: $color-pink-2;
+    position: relative;
+
+    @media (min-width: $bp-largest) {
+        width: 91rem;
+        height: 60rem;
+    }
+
+    @media (max-width: 1330px) {
+        width: 35rem;
+        height: 48rem;
+    }
+
+    @media (max-width: 1140px) {
+        width: 33rem;
+        height: 46rem;
+    }
+
+    @media (max-width: $bp-large) {
+        width: 60rem;
+        height: 33rem; 
+        margin-left: -4rem;
+    }
+
+    @media (max-width: 803px) {
+        width: 50rem;
+    }
+
+    @media (max-width: $bp-small-extra) {
+        width: 40rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        width: 30rem;
+        height: 48rem;
+    }
+
+    @media (max-width: $bp-mobile-m) {
+        width: 100%;
+        height: 56rem;
+        margin-left: 0;
+    }
+    
+}
+
+.Description {
+    @include flex-center-row;
+    width: 45rem;
+    height: 48rem;
+    padding: 3.5rem;
+    background-color: $color-light-pink-2;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    background-image: linear-gradient(
+                          rgba($color-light-pink-1, 0.95), 
+                          rgba($color-light-pink-2, 0.9)),
+                          url(../../assets/images/8-min.jpg);
+    @include bg-properties;
+
+    @media (min-width: $bp-largest) {
+        width: 91rem;
+        height: 60rem;
+        padding: 11rem;
+        top: 6rem;
+        left: 6rem;
+    }
+
+    @media (max-width: 1330px) {
+        width: 35rem;
+        height: 48rem;
+    }
+
+    @media (max-width: 1140px) {
+        width: 33rem;
+        height: 46rem;
+    }
+
+    @media (max-width: $bp-large) {
+        width: 100%;
+        height: 33rem;
+    }
+
+    @media (max-width: 803px) {
+        height: 33rem;
+        padding: 4rem;
+    }
+
+    @media (max-width: $bp-small-extra) {
+        width: 40rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        width: 30rem;
+        height: 48rem;
+    }
+
+    @media (max-width: $bp-mobile-m) {
+        padding: 2.5rem;
+        width: 100%;
+        left: 0;
+    }
+
+    @media (max-width: 415px) {
+        padding: 4.5rem 2.5rem;
+    }
+}
+
+.FadeIn {
+    animation: fadeIn .4s ease-in-out forwards;
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20rem)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0rem)
+    }
+}
+
+.FadeOut {
+    animation: fadeOut .4s ease-in-out forwards;
+}
+

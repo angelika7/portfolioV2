@@ -1,0 +1,226 @@
+@import './../../styles/variables';
+@import './../../styles/mixins';
+
+.Header { 
+    margin-top: 9rem;
+    height: 50rem;
+    background-image: linear-gradient(
+                          rgba($color-light-pink-1, 0.2), 
+                          rgba($color-light-pink-2, 0.2)),
+                          url(../../assets/images/9-min.jpg);
+    @include bg-properties;
+    position: relative;
+
+    @media (min-width: $bp-largest) {
+        height: 75rem;
+        margin-top: 20rem;
+    }
+
+    @media (max-width: $bp-small) {
+        margin-top: 0;
+        height: 61rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        height: 100vh;
+    }
+}
+
+.ImgBox {
+    position: absolute;
+    height: 40rem;
+    width: 30rem;
+    top: 30%;
+    left: 18rem;
+    background-color: $color-dark-mint-1;
+    z-index: 10 !important;
+    transform: translateX(-100rem);
+    transition: all .3s;
+
+    @media (min-width: $bp-largest) {
+        height: 74.5rem;
+        width: 45rem;
+        left: 10%;
+    }
+
+    @media (max-width: 1300px) {
+        left: 5rem;
+    }
+
+    @media (max-width: 1160px) {
+        width: 23rem;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        top: 50%;
+    }
+
+    @media (max-width: $bp-smallest) {
+        left: 4rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        height: 35rem;
+        width: 20rem;
+        left: 3rem;
+        top: 47.5%;
+    }
+}
+
+.AnimationImgBox {
+    transform: translateX(0);
+} 
+
+.Img {
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 50;
+
+    @media (min-width: $bp-largest) {
+        width: 78rem;
+        left: -4rem;
+    }
+
+    @media (max-width: 1140px) {
+        top: 5rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        width: 20rem;
+        top: 3rem;
+        left: -3rem;
+    }
+}
+
+.AnimationImg {
+    animation: entrance .6s  ease-out;
+}
+
+@keyframes entrance {
+    0% {
+        transform: translateX(100%);
+    }
+
+    70% {
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+.SloganBox {
+    position: absolute;
+    height: auto;
+    width: 80rem;
+    top: 20%;
+    right: 0;
+    background-color: rgba($color-light-pink-1, .9);
+    padding: 3rem;
+    z-index: 22;
+    transform: translateX(100rem);
+    transition: all .3s;
+    transition-delay: .4s;
+    @include flex-center-row;
+
+    @media (min-width: $bp-largest) {
+        width: 140rem;
+    }
+
+    @media (max-width: 1140px) {
+        width: 70rem;
+    }
+
+    @media (max-width: $bp-medium) {
+        top: 14%;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        width: 60rem;
+    }
+
+    @media (max-width: $bp-small) {
+        top: 16%;
+    }
+
+    @media (max-width: $bp-smallest) {
+        width: 100%;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        top: 14%;
+    }
+}
+
+.AnimationSloganBox {
+    transform: translateX(0);
+}
+
+.Slogan {
+    @include fill-img-width;
+}
+
+.NameBox {
+    position: absolute;
+    top: 75%;
+    right: 0;
+    padding: 3rem;
+
+    @media (max-width: $bp-large) {
+        top: 71%;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        right: 2rem;
+        top: 68%;
+    }
+
+    @media (max-width: $bp-smallest) {
+        top: 0%;
+        right: 6rem;
+    }
+}
+
+.Name {
+    font-family: 'Notera';
+    src: url(../../assets/fonts/Notera.ttf) format('ttf');
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.5rem;
+    white-space: nowrap;
+    overflow: hidden; 
+
+    @media (min-width: $bp-largest) {
+        font-size: 9rem;
+    }
+
+    @media (max-width: $bp-medium-extra) {
+        font-size: 4rem;
+        text-align: end;
+    }
+
+    @media (max-width: $bp-smallest) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: $bp-mobile-l) {
+        font-size: 2rem;
+    }
+} 
+
+.Typing {
+    animation: typing 2s steps(40, end) 1,
+}
+
+@keyframes typing {
+    from{width: 0;}
+    to{width: 100%;}
+}
+
+
+

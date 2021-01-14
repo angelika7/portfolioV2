@@ -1,0 +1,41 @@
+@import './../../../styles/variables';
+@import './../../../styles/mixins';
+
+.Toolbar {
+    @include top-bar;
+    @include flex-center-row;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999; 
+
+    @media (min-width: $bp-largest) {
+        height: 20rem;
+    }
+
+    @media (max-width: $bp-small) {
+        width: 100%;
+        background-color: transparent;
+    }
+}
+
+.Circle {
+    border-radius: 50%;
+	width: 0;
+	height: 0; 
+	position: absolute;
+	top: 1rem;
+	right: 0rem;
+	background-color: $color-green-dark;
+	opacity: 1;
+	transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);		
+}
+.Expand{
+	width: 120rem;
+	height: 120rem;
+	top: -6rem;
+	right: -5.65rem; 	
+	transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);						
+	
+}
