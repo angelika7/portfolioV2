@@ -1,0 +1,36 @@
+@import './../../../styles/variables';
+
+.NavList {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+
+    @media (max-width: 1160px) {
+        width: 100%;
+    }
+
+    @media (max-width: $bp-small) {
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+        position: absolute;
+        transform: translate(100%, -100%);
+        transition: all .3s;
+        background-color: $color-green-dark;
+        padding: 26rem 0;
+        top: 0;
+        left: 0;
+    }
+}
+
+/* .Active {
+    color: $color-dark !important;   
+    background-color: $color-light-mint-1;
+}  */
+
+.IsOpened {
+    transform: translate(0%, 0%);
+}
