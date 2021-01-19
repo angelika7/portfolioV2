@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import classes from './about.scss';
-import './about.scss';
 import styles from './../../styles/_typography.scss';
 import aboutText from './../../assets/images/about.png';
 import me1 from './../../assets/images/about1-min.jpg';
@@ -9,7 +8,7 @@ import me3 from './../../assets/images/about6-min.jpg';
 import me4 from './../../assets/images/about4-min.jpg';
 
 function UseOnScreen(options) {
-    const ref = useRef(null);
+    const ref = useRef();
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
