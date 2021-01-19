@@ -1,7 +1,7 @@
 @import './../../styles/variables';
 @import './../../styles/mixins';
 
-.Stack {
+.stack {
     margin: 0 auto;
     width: 80%;
     display: grid;
@@ -29,7 +29,7 @@
     }
 }
 
-.InfoBox {
+.infoBox {
     background-color: #e388a7;
     width: 100%;
     overflow: hidden;
@@ -43,7 +43,7 @@
     }
 }
 
-.Tulips {
+.tulips {
     height: 45rem;
     object-fit: cover;
 
@@ -63,7 +63,7 @@
     }
 }
 
-.Box {
+.box {
     width: 120%;
     height: 14rem;
     margin-top: -6rem;
@@ -76,18 +76,18 @@
     }
 }
 
-.Info {
+.info {
     width: 75%;
 }
 
-.Tools {
+.tools {
     background-color: rgba($color-light-pink-1, .9);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.ToolsHeading {
+.toolsHeading {
     margin-top: 2rem;
     width: 25rem;
 
@@ -106,11 +106,11 @@
     }
 }
 
-.TextBox {
+.textBox {
     width: 100%;
 }
 
-.ToolsBox {
+.toolsBox {
     width: 90%;
     flex-wrap: wrap;
     display: flex;

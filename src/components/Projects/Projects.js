@@ -49,12 +49,12 @@ class Projects extends Component {
     render() {
 
         return (
-            <section className={classes.Projects} id='projects'>
-                <div className={classes.SloganBox}>
-                    <img className={classes.Slogan} src={slogan} alt='Text'/>
+            <section className={classes.projects} id='projects'>
+                <div className={classes.sloganBox}>
+                    <img className={classes.slogan} src={slogan} alt='Text'/>
                 </div>
-                <div className={classes.InfoBox}><p className={styleText.TextInfo}>- kliknij na projekt, żeby dowiedzieć się więcej</p></div>
-                <div className={classes.ProjectsBox}>
+                <div className={classes.infoBox}><p className={styleText.textInfo}>- kliknij na projekt, żeby dowiedzieć się więcej</p></div>
+                <div className={classes.projectsBox}>
                 {this.state.projects.map((e, i) => {
                         return <ProjectItem key={i} info={e.info} active={e.isActive} title={e.title} bgImage={`url(${e.url})`} alt={e.alt} backInfo={e.backInfo} id={e.id} isFlipped={e.isFlipped} live={e.live} github={e.github} onClick={this.onClickHandler}/>
                     })}

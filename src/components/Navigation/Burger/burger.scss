@@ -1,7 +1,7 @@
 @import './../../../styles/variables';
 @import './../../../styles/mixins';
 
-.BurgerBox {
+.burgerBox {
     display: none;
     width: 7rem;
     height: 7rem;
@@ -39,7 +39,7 @@
     }
 }
 
-.Line {
+.line {
     position: absolute;
     border-radius: 5px;
     width: 3.5rem;
@@ -76,16 +76,16 @@
     }
 }
 
-.Open span:nth-child(2) {
+.open span:nth-child(2) {
     opacity: 0;
 }
 
-.Open span:nth-child(1) {
+.open span:nth-child(1) {
     top: 3rem;
     transform: rotate(135deg);
 }
 
-.Open span:nth-child(3) {
+.open span:nth-child(3) {
     top: 3rem;
     transform: rotate(-135deg);
 }

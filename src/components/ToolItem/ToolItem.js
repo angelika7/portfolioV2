@@ -8,17 +8,17 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 const toolItem = (props) => {
 
     return (
-        <div className={classes.Item} style={props.note ? {cursor: 'pointer'} : {cursor: 'default'}} onClick={props.note ? () => {props.onClick(props.id)} : null}>
-            <img className={classes.Img} src={props.url} alt={props.alt}/>
-            <div className={classes.ToolInfoBox}>
-                <p className={[styleText.Info, styleText.Info___tools].join(' ')}>{props.info}</p>
+        <div className={classes.item} style={props.note ? {cursor: 'pointer'} : {cursor: 'default'}} onClick={props.note ? () => {props.onClick(props.id)} : null}>
+            <img className={classes.img} src={props.url} alt={props.alt}/>
+            <div className={classes.toolInfoBox}>
+                <p className={[styleText.info, styleText.info___tools].join(' ')}>{props.info}</p>
             </div>
-            <div className={`${classes.Back} ${props.isFlipped ? classes.IsFlipped : ''}`}>
-                <div className={classes.CloseBox}>
-                    <FontAwesomeIcon icon={faTimes} className={classes.Close} />
+            <div className={`${classes.back} ${props.isFlipped ? classes.isFlipped : ''}`}>
+                <div className={classes.closeBox}>
+                    <FontAwesomeIcon icon={faTimes} className={classes.close} />
                 </div>
-                <div className={classes.TextBox}>
-                    <p className={[styleText.Info, styleText.Info___skills].join(' ')}>{props.backInfo}</p>
+                <div className={classes.textBox}>
+                    <p className={[styleText.info, styleText.info___skills].join(' ')}>{props.backInfo}</p>
                 </div> 
             </div> 
         </div>

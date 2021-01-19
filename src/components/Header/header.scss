@@ -1,7 +1,7 @@
 @import './../../styles/variables';
 @import './../../styles/mixins';
 
-.Header { 
+.header { 
     margin-top: 9rem;
     height: 50rem;
     background-image: linear-gradient(
@@ -26,7 +26,7 @@
     }
 }
 
-.ImgBox {
+.imgBox {
     position: absolute;
     height: 40rem;
     width: 30rem;
@@ -67,11 +67,11 @@
     }
 }
 
-.AnimationImgBox {
+.animationImgBox {
     transform: translateX(0);
 } 
 
-.Img {
+.img {
     position: absolute;
     top: -5rem;
     left: -5rem;
@@ -96,7 +96,7 @@
     }
 }
 
-.AnimationImg {
+.animationImg {
     animation: entrance .6s  ease-out;
 }
 
@@ -114,7 +114,7 @@
     }
 }
 
-.SloganBox {
+.sloganBox {
     position: absolute;
     height: auto;
     width: 80rem;
@@ -157,15 +157,15 @@
     }
 }
 
-.AnimationSloganBox {
+.animationSloganBox {
     transform: translateX(0);
 }
 
-.Slogan {
+.slogan {
     @include fill-img-width;
 }
 
-.NameBox {
+.nameBox {
     position: absolute;
     top: 75%;
     right: 0;
@@ -186,7 +186,7 @@
     }
 }
 
-.Name {
+.name {
     font-family: 'Notera';
     src: url(../../assets/fonts/Notera.ttf) format('ttf');
     font-style: normal;
@@ -213,7 +213,7 @@
     }
 } 
 
-.Typing {
+.typing {
     animation: typing 2s steps(40, end) 1,
 }
 

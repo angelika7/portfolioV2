@@ -1,7 +1,7 @@
 @import './../../styles/variables';
 @import './../../styles/mixins';
 
-.Item {
+.item {
     width: 28rem;
     height: 19rem;
     background-color: $color-dark-mint-1;
@@ -32,7 +32,7 @@
     }
 }
 
-.Img {
+.img {
     width: 28rem;
     height: 19rem;
     position: absolute;
@@ -59,7 +59,7 @@
     }
 }
 
-.TitleBox {
+.titleBox {
     width: 85%;
     height: 50%;
     padding: 1rem;
@@ -71,7 +71,7 @@
     }
 }
 
-.Back {
+.back {
     position: absolute;
     top: 0;
     left: 0;
@@ -95,12 +95,12 @@
     }
 }
 
-.IsFlipped {
+.isFlipped {
     transform: translateY(0);
     opacity: 1;
 }
 
-.TextBox {
+.textBox {
     padding: 1.5rem 0;
     width: 90%;
     height: 100%;
@@ -117,7 +117,7 @@
     }
 }
 
-.Icons {
+.icons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -125,7 +125,7 @@
     margin-top: 2rem;
 }
 
-.Icon {
+.icon {
     font-size: 4rem;
     color: $color-light-mint-1;
     transition: all .3s;
@@ -144,7 +144,7 @@
     }
 }
 
-.CloseBox {
+.closeBox {
     position: absolute;
     top: 1.5rem;
     right: 2rem;
@@ -157,7 +157,7 @@
     }
 }
 
-.Close {
+.close {
     font-size: 3rem;
     color: $color-light-pink-3;
     transform: scale(1);

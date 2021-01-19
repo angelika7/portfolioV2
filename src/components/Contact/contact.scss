@@ -1,7 +1,7 @@
 @import './../../styles/variables';
 @import './../../styles/mixins';
 
-.Contact {
+.contact {
     width: 100%;
     margin-top: 8rem;
     height: 30rem;
@@ -16,7 +16,7 @@
     }
 }
 
-.Slogan {
+.slogan {
     width: 23rem;
     margin-top: 3rem;
     margin-left: 3rem;
@@ -37,12 +37,12 @@
     }
 }
 
-.Decoration {
+.decoration {
     background-image: url(../../assets/images/5.jpg);
     @include bg-properties;
 }
 
-.InfoBox {
+.infoBox {
     width: 50%;
     height: 70%;
     background-color: rgba($color-light-mint-1, .9);
@@ -67,7 +67,7 @@
     }
 }
 
-.Icon {
+.icon {
     font-size: 6rem;
     color: $color-dark-mint-2;
     transition: all .3s;

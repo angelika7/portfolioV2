@@ -1,8 +1,7 @@
 @import './../../styles/variables';
 @import './../../styles/mixins';
 
-
-.Projects {
+.projects {
     margin-top: 5rem;
     width: 100%;
     display: flex;
@@ -41,7 +40,7 @@
     }
 }
 
-.SloganBox {
+.sloganBox {
     width: 30rem;
     height: auto;
     position: absolute;
@@ -59,11 +58,11 @@
     }
 } 
 
-.Slogan {
+.slogan {
     @include fill-img-width;
 }
 
-.ProjectsBox {
+.projectsBox {
     margin-top: 3rem;
     padding: .5rem;
     width: 95%;
@@ -92,7 +91,7 @@
     }
 }
 
-.InfoBox {
+.infoBox {
     margin-bottom: 1rem;
     margin-top: 16rem;
 

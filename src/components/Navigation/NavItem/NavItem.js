@@ -4,17 +4,14 @@ import classes from './navItem.scss'
 
 const navItem = (props) => {
     return (
-        <li className={props.open ? [classes.NavItem, classes.Animate].join(' ') : classes.NavItem} id={props.id}>
+        <li className={props.open ? [classes.navItem, classes.animate].join(' ') : classes.navItem} id={props.id}>
             <NavLink 
                 smooth to={props.link}
-                //activeClassName={props.active}
             >    
             {props.children}   
             </NavLink>
         </li>
     );
 }
-
-
 
 export default navItem;

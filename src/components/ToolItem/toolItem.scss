@@ -1,7 +1,7 @@
 @import './../../styles/variables';
 @import './../../styles/mixins';
 
-.Item {
+.item {
     position: relative;
     width: 16rem;
     height: 19rem;
@@ -19,7 +19,7 @@
     }
 }
 
-.Img {
+.img {
     height: 50%;
     margin-bottom: 1rem;
     filter: opacity(85%);
@@ -30,7 +30,7 @@
     }
 }
 
-.ToolInfoBox {
+.toolInfoBox {
     width: 100%;
     height: 4rem;
     padding: .8rem 0;
@@ -46,7 +46,7 @@
     }
 }
 
-.Back {
+.back {
     display: flex;
     position: absolute;
     width: 16rem;
@@ -66,13 +66,13 @@
     }
 }
 
-.CloseBox {
+.closeBox {
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
-.Close {
+.close {
     font-size: 2rem;
     color: #e388a7;
     transition: all .3s;
@@ -83,13 +83,13 @@
     }
 }
 
-.TextBox {
+.textBox {
     height: 100%;
     padding-bottom: 1.5rem;
     @include flex-center-row;
 }
 
-.IsFlipped {
+.isFlipped {
     transform: translateY(0);
     opacity: 1;
 }

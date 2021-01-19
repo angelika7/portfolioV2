@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 import NavItem from './../NavItem/NavItem';
 import styles from './../NavItem/navItem.scss'; 
 import classes from './navList.scss';
@@ -9,18 +8,18 @@ import classes from './navList.scss';
 class NavList extends Component {
   state = {
     IDs: [
-      {key: 0, id: '#home', name: 'Home', style: '--i:0'},
-      {key: 1, id: '#about', name: 'O mnie', style: '--i:1'},
-      {key: 2, id: '#projects', name: 'Projekty', style: '--i:2'},
-      {key: 3, id: '#stack', name: 'Umiejętności', style: '--i:3'},
-      {key: 4, id: '#contact', name: 'Kontakt', style: '--i:4'}
+      {key: 0, id: '#home', name: 'Home'},
+      {key: 1, id: '#about', name: 'O mnie'},
+      {key: 2, id: '#projects', name: 'Projekty'},
+      {key: 3, id: '#stack', name: 'Umiejętności'},
+      {key: 4, id: '#contact', name: 'Kontakt'}
     ]
   }
   
 
   componentDidMount() {
    window.addEventListener('scroll', this.changeActiveClass)
-   document.querySelector(`ul li a[href="/#home"]`).classList.add(`${styles.Active}`);
+   document.querySelector(`ul li a[href="/#home"]`).classList.add(`${styles.active}`);
   }
 
   
@@ -88,21 +87,16 @@ class NavList extends Component {
       observer.observe(section); 
   } */
 
-  
-  
-
   render() {
     
     return (
-    <ul className={this.props.open ? [classes.NavList, classes.IsOpened].join(' ') : classes.NavList}>
+    <ul className={this.props.open ? [classes.anvList, classes.isOpened].join(' ') : classes.navList}>
       {this.state.IDs.map(el => {
-        return <NavItem open={this.props.open} style={el.style} key={el.key} id={el.id} link={el.id} active={classes.Active}>{el.name}</NavItem>
+        return <NavItem open={this.props.open} style={el.style} key={el.key} id={el.id} link={el.id} active={classes.active}>{el.name}</NavItem>
       })}
     </ul>
   )
   }
-
-    
 };
 
 export default NavList;

@@ -13,15 +13,15 @@ const Header = (props) => {
     });
 
     return (
-    <header className={classes.Header} id='home'>
-        <div className={loaded ? [classes.ImgBox, classes.AnimationImgBox].join(' ') : classes.ImgBox}>
-            <img src={girl} className={loaded ? [classes.Img, classes.AnimationImg].join(' ') : classes.Img} alt='Młoda dziewczyna siedzi przy laptopie i pracuje'/>
+    <header className={classes.header} id='home'>
+        <div className={loaded ? [classes.imgBox, classes.animationImgBox].join(' ') : classes.imgBox}>
+            <img src={girl} className={loaded ? [classes.img, classes.animationImg].join(' ') : classes.img} alt='Młoda dziewczyna siedzi przy laptopie i pracuje'/>
         </div>
-        <div className={loaded ? [classes.SloganBox, classes.AnimationSloganBox].join(' ') : classes.SloganBox}>
-            <img className={classes.Slogan} src={slogan} alt='Slogan - Front-end Developer'/>
+        <div className={loaded ? [classes.sloganBox, classes.animationSloganBox].join(' ') : classes.sloganBox}>
+            <img className={classes.slogan} src={slogan} alt='Slogan - Front-end Developer'/>
         </div>
-        <div className={classes.NameBox}>
-            <h2 className={loaded ? [classes.Name, classes.Typing].join(' ') : classes.Name}>Angelika Chochorowska</h2> 
+        <div className={classes.nameBox}>
+            <h2 className={loaded ? [classes.name, classes.typing].join(' ') : classes.name}>Angelika Chochorowska</h2> 
         </div>
     </header>
 

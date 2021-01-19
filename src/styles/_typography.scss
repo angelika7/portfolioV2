@@ -2,7 +2,7 @@
 @import './mixins';
 
 
-.TextInfo {
+.textInfo {
     font-size: 1.6rem;
     color: #0D0D0D;
     letter-spacing: .2rem;
@@ -17,7 +17,7 @@
     }
 }
 
-.Info {
+.info {
     font-size: 1.2rem;
     line-height: 2rem;
     text-align: center;
@@ -46,10 +46,6 @@
         font-weight: 700;
         color: $color-dark-2;
         font-size: 1.6rem;
-
-        /* @media (max-width: $bp-mobile-s) {
-            font-size: 1.2rem;
-        } */
     }
 
     &___footer {

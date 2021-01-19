@@ -12,15 +12,15 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 
 
 const contact = (props) => (
-    <section className={classes.Contact} id='contact'>
-        <img className={classes.Slogan} src={contactText} alt='Text'/>
-        <div className={classes.InfoBox}>
-            <Link to={{ pathname: "https://www.facebook.com/angelika.chochorowska/" }} target="_blank"><FontAwesomeIcon icon={faFacebookSquare} className={classes.Icon} /></Link>
-            <a href="mailto:angelika.chochorowska7@gmail.com"><FontAwesomeIcon icon={faGooglePlusSquare} className={classes.Icon} /></a>
-            <FontAwesomeIcon icon={faLinkedin} className={classes.Icon} />
-            <Link to={{ pathname: "https://github.com/angelika7" }} target="_blank"><FontAwesomeIcon icon={faGithubSquare} className={classes.Icon} /></Link>
+    <section className={classes.contact} id='contact'>
+        <img className={classes.slogan} src={contactText} alt='Text'/>
+        <div className={classes.infoBox}>
+            <Link to={{ pathname: "https://www.facebook.com/angelika.chochorowska/" }} target="_blank"><FontAwesomeIcon icon={faFacebookSquare} className={classes.icon} /></Link>
+            <a href="mailto:angelika.chochorowska7@gmail.com"><FontAwesomeIcon icon={faGooglePlusSquare} className={classes.icon} /></a>
+            <FontAwesomeIcon icon={faLinkedin} className={classes.icon} />
+            <Link to={{ pathname: "https://github.com/angelika7" }} target="_blank"><FontAwesomeIcon icon={faGithubSquare} className={classes.icon} /></Link>
         </div>
-        <div className={classes.Decoration}></div>
+        <div className={classes.decoration}></div>
     </section>
 );
 

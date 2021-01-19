@@ -33,31 +33,31 @@ function About(){
     const [ref, visible] = UseOnScreen({threshold: 0.4});
     
     return (
-        <section className={classes.About} id='about' ref={ref}>
-        <div className={classes.SloganBox}>
-            <img className={classes.Slogan} src={aboutText} alt='O mnie'/>
+        <section className={classes.about} id='about' ref={ref}>
+        <div className={classes.sloganBox}>
+            <img className={classes.slogan} src={aboutText} alt='O mnie'/>
         </div>
         
-            <div className={visible ? [classes.LeftSide, classes.FadeIn].join(' ') : [classes.LeftSide, classes.FadeOut].join(' ')}> 
-                <div className={classes.DescriptionBox}>
-                    <div className={classes.Description}>
-                        <p className={styles.TextInfo}>Cześć! Mam na imię Angelika z wykształcenia jestem socjologiem, ale to właśnie programowanie stało się moją ogromną pasją. Od ponad 1.5 roku, sama uczę się frontendu. Korzystam z Internetu (kursów na Udemy, YouTuba, blogów, forów i platform do nauki). Lubię pracę kreatywną, do tej pory byłam Copywriterem. Szukam pracy, która pozwoli mi rozwijać zdobyte do tej pory umiejętności i poznać ciekawych ludzi.</p>
+            <div className={visible ? [classes.leftSide, classes.fadeIn].join(' ') : [classes.leftSide, classes.fadeOut].join(' ')}> 
+                <div className={classes.descriptionBox}>
+                    <div className={classes.description}>
+                        <p className={styles.textInfo}>Cześć! Mam na imię Angelika z wykształcenia jestem socjologiem, ale to właśnie programowanie stało się moją ogromną pasją. Od ponad 1.5 roku, sama uczę się frontendu. Korzystam z Internetu (kursów na Udemy, YouTuba, blogów, forów i platform do nauki). Lubię pracę kreatywną, do tej pory byłam Copywriterem. Szukam pracy, która pozwoli mi rozwijać zdobyte do tej pory umiejętności i poznać ciekawych ludzi.</p>
                     </div>
                 </div>
             </div>
-            <div className={classes.RightSide} ref={ref}>
-                <div className={classes.FotoBox}>
-                    <figure className={classes.FotoBox_foto}>
-                        <img className={visible ? [classes.FotoBox_foto___one, classes.AnimationImg].join(' ') : classes.FotoBox_foto___one} src={me1} alt=''></img>
+            <div className={classes.rightSide} ref={ref}>
+                <div className={classes.fotoBox}>
+                    <figure className={classes.fotoBox_foto}>
+                        <img className={visible ? [classes.fotoBox_foto___one, classes.animationImg].join(' ') : classes.fotoBox_foto___one} src={me1} alt=''></img>
                     </figure>
-                    <figure className={classes.FotoBox_foto}>
-                        <img className={visible ? [classes.FotoBox_foto___two, classes.AnimationImg].join(' ') : classes.FotoBox_foto___two} src={me4} alt=''></img>
+                    <figure className={classes.fotoBox_foto}>
+                        <img className={visible ? [classes.fotoBox_foto___two, classes.animationImg].join(' ') : classes.fotoBox_foto___two} src={me4} alt=''></img>
                     </figure>
-                    <figure className={classes.FotoBox_foto}>
-                        <img className={visible ? [classes.FotoBox_foto___three, classes.AnimationImg].join(' ') : classes.FotoBox_foto___three} src={me2} alt=''></img>
+                    <figure className={classes.fotoBox_foto}>
+                        <img className={visible ? [classes.fotoBox_foto___three, classes.animationImg].join(' ') : classes.fotoBox_foto___three} src={me2} alt=''></img>
                     </figure>
-                    <figure className={classes.FotoBox_foto}>
-                        <img className={visible ? [classes.FotoBox_foto___four, classes.AnimationImg].join(' ') : classes.FotoBox_foto___four} src={me3} alt=''></img>
+                    <figure className={classes.fotoBox_foto}>
+                        <img className={visible ? [classes.fotoBox_foto___four, classes.animationImg].join(' ') : classes.fotoBox_foto___four} src={me3} alt=''></img>
                     </figure>
                 </div>
             </div>

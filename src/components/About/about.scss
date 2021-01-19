@@ -1,7 +1,7 @@
 @import './../../styles/variables';
 @import './../../styles/mixins';
 
-.About {
+.about {
     width: 80%;
     background-color: $color-light-pink-1;
     margin: 0 auto;
@@ -20,7 +20,7 @@
     }
 }
 
-.SloganBox {
+.sloganBox {
     width: 30rem;
     height: auto;   
     position: absolute;
@@ -60,11 +60,11 @@
     }
 }
 
-.Slogan {
+.slogan {
     @include fill-img-width;
 }
 
-.RightSide {
+.rightSide {
     width: 100%;
     height: 100%;
 
@@ -87,7 +87,7 @@
     }
 }
 
-.FotoBox {
+.fotoBox {
     height: 35rem;
     width: 40rem;
     margin-left: 5rem;
@@ -255,12 +255,12 @@
     } 
 }
 
-.AnimationImg {
+.animationImg {
     opacity: 1;
     transform: translateY(0);
 }
 
-.LeftSide {
+.leftSide {
     margin-top: 20rem;
 
     visibility: hidden;
@@ -288,7 +288,7 @@
     }
 }
 
-.DescriptionBox {
+.descriptionBox {
     width: 45rem;
     height: 48rem;
     margin-left: -4rem;
@@ -337,7 +337,7 @@
     
 }
 
-.Description {
+.description {
     @include flex-center-row;
     width: 45rem;
     height: 48rem;
@@ -400,7 +400,7 @@
     }
 }
 
-.FadeIn {
+.fadeIn {
     animation: fadeIn .4s ease-in-out forwards;
     visibility: visible;
 }
@@ -416,7 +416,7 @@
     }
 }
 
-.FadeOut {
+.fadeOut {
     animation: fadeOut .4s ease-in-out forwards;
 }
 

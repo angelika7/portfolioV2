@@ -54,30 +54,28 @@ class Stack extends Component {
 
     render() {
         return (
-            <section className={classes.Stack} id='stack'>
-                <div className={classes.Tools}>
-                    <img className={classes.ToolsHeading} src={tools} alt="Umiejętności"/>
-                    <div className={classes.TextBox}>
-                        <p className={styleText.TextInfo}>- kliknij na narzędzie z łapką, żeby zobaczyć szczegóły</p>
+            <section className={classes.stack} id='stack'>
+                <div className={classes.tools}>
+                    <img className={classes.toolsHeading} src={tools} alt="Umiejętności"/>
+                    <div className={classes.textBox}>
+                        <p className={styleText.textInfo}>- kliknij na narzędzie z łapką, żeby zobaczyć szczegóły</p>
                     </div>
-                    <div className={classes.ToolsBox}> 
+                    <div className={classes.toolsBox}> 
                         {this.state.toolsArray.map((e, i) => {
                             return <ToolItem key={i} info={e.info} url={e.url} alt={e.alt} backInfo={e.backInfo} id={e.id} isFlipped={e.isFlipped} note={e.note} onClick={this.onClickHandler}/>
                         })}
                     </div>
                 </div>
-                <div className={classes.InfoBox}>
-                    <img className={classes.Tulips} src={tulips} alt=''/>
-                    <div className={classes.Box}>
-                        <img className={classes.Info} src={info} alt=''/>
+                <div className={classes.infoBox}>
+                    <img className={classes.tulips} src={tulips} alt=''/>
+                    <div className={classes.box}>
+                        <img className={classes.info} src={info} alt=''/>
                     </div>
                 </div>
                 
             </section>
         );
     }
-
-    
 }
 
 export default Stack;

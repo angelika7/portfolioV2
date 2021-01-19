@@ -12,27 +12,27 @@ const projectItem = (props) => {
 
     return (
         <React.Fragment>
-            <div className={classes.Item} onClick={() => {props.onClick(props.id)}}>
-                <div className={classes.Img} style={{backgroundImage: props.bgImage}}>
-                    <div className={classes.TitleBox}>
-                        <p className={styleText.Info}>{props.info}</p>
-                        <p className={[styleText.Info, styleText.Info___title].join(' ')}>{props.title}</p>
+            <div className={classes.item} onClick={() => {props.onClick(props.id)}}>
+                <div className={classes.img} style={{backgroundImage: props.bgImage}}>
+                    <div className={classes.titleBox}>
+                        <p className={styleText.info}>{props.info}</p>
+                        <p className={[styleText.info, styleText.info___title].join(' ')}>{props.title}</p>
                     </div>
                 </div>
-                <div className={`${classes.Back} ${props.isFlipped ? classes.IsFlipped : ''}`}>
-                    <div className={classes.CloseBox}>
-                        <FontAwesomeIcon icon={faTimes} className={classes.Close} />
+                <div className={`${classes.back} ${props.isFlipped ? classes.isFlipped : ''}`}>
+                    <div className={classes.closeBox}>
+                        <FontAwesomeIcon icon={faTimes} className={classes.close} />
                     </div>
-                    <div className={classes.Icons}>
+                    <div className={classes.icons}>
                         {props.active ?
                         <React.Fragment>
-                            <Link to={{ pathname: props.live }} target="_blank"><FontAwesomeIcon icon={faGlobe} className={classes.Icon} /></Link>
-                            <Link to={{ pathname: props.github }} target="_blank"><FontAwesomeIcon icon={faGithubSquare} className={classes.Icon} /> </Link>
+                            <Link to={{ pathname: props.live }} target="_blank"><FontAwesomeIcon icon={faGlobe} className={classes.icon} /></Link>
+                            <Link to={{ pathname: props.github }} target="_blank"><FontAwesomeIcon icon={faGithubSquare} className={classes.icon} /> </Link>
                         </React.Fragment>
                         : null}
                     </div>
-                    <div className={classes.TextBox}>
-                        <p className={[styleText.Info, styleText.Info___technologies].join(' ')}>{props.backInfo}</p>
+                    <div className={classes.textBox}>
+                        <p className={[styleText.info, styleText.info___technologies].join(' ')}>{props.backInfo}</p>
                     </div> 
                 </div> 
             </div>
