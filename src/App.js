@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Layout from './containers/hoc/Layout/Layout';
+import Layout from './containers/Layout/Layout';
 import Header from './components/Header/Header';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
